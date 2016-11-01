@@ -1,0 +1,298 @@
+body{
+	font-family: 微软雅黑, "Microsoft YaHei", 宋体, sans-serif;
+}
+a{
+	text-decoration: none;
+}
+.main{
+	width: 1258px;
+	margin: 0 auto;
+}
+.main .header{
+	width: 1258px;
+	height: 65px;
+	margin: 0px;
+	padding: 0px;
+}
+.main .header img{
+	margin-top: 5px;
+	margin-left: 128px;
+	float: left;
+	margin-right: 350px;
+}
+.btn-lg{
+	padding: 0px;
+}
+.main .header a{
+	font-family: 微软雅黑, "Microsoft YaHei", 宋体, sans-serif;
+	text-decoration: none;
+	float: left;
+	font-size: 16px;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.main .header a span{
+	color: rgb(213,213,213);
+	float: left;
+}
+.main .header .link-position{
+	color: #000000;
+	margin-top: 22px;
+	margin-right: 10px; 
+}
+
+.main .header a:hover {
+	color: #1abc9c;
+}
+.main .header .phone-number{
+	font-size: 16px;
+	margin-top: 22px;
+	margin-left: 20px;
+	float: left;
+}
+.main .centre{
+	height: auto;
+	width: 1258px;
+	float: left;
+	margin-bottom: 30px;
+}
+.main .centre .carousel{
+	float: left;
+	width: 1000px;
+	margin-left: 129px;
+	background-color: green;
+	height: 320px;
+}
+.main .centre .carousel img{
+	width: 1000px;
+	height: 320px;
+}
+.left-control,.right-control{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 15%;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	opacity: .5;
+}
+.right-control{
+	right: 0;
+	left: auto;
+}
+.left-control:hover,.right-control:hover{
+	opacity: .9;
+	color: white;
+}
+.left-control .glyphicon-chevron-left,
+.right-control .glyphicon-chevron-right{
+	font-size: 30px;
+	margin-top: 145px;
+	color: white;
+}
+.main .centre .carousel .carousel-indicators,.left-control,.right-control{
+	display: none;
+}
+.main .centre .centre-img-box{
+	width: 1258px;
+	height: 120px;
+	float: left;
+	padding: 0 160px;
+}
+.main .centre .centre-img-box img{
+	width: 115px;
+	height: 115px;
+	margin-left: 80px;
+	margin-top: 10px;
+}
+.main .centre .link-a{
+	width: 1258px;
+	height: 50px;
+	float: left;
+	padding: 0 124px;
+	margin-bottom: 20px;
+}
+.main .centre .link-a a{
+	margin-left: 145px;
+	float: left;
+	color: black;
+	border-left: 4px solid;
+	border-color: #2ca280;
+	padding-left: 5px;
+	text-decoration: none;
+	margin-top: 10px;
+	margin-right: 2px;
+}
+.main .centre .centre-info-box{
+	width: 1258px;
+	height: auto;
+	float: left;
+}
+.main .centre .centre-info-box .info-left-box{
+	width: 720px;
+	height: auto;
+	float: left;
+	margin-left: 143px;
+}
+.main .centre .centre-info-box .info-left-box .info-content-box{
+	min-height: 120px;
+	margin-bottom: 20px;
+	float: left;
+}
+.main .centre .centre-info-box .info-left-box .info-menu{
+	width: 680px;
+	height: 40px;
+	float: left;
+	border-bottom: 1px solid;
+	border-color: #d4d4d4;
+}
+.main .centre .centre-info-box .info-left-box .info-menu span{
+	border-left: 4px solid;
+	border-color: #2960de;
+	float: left;
+	color: #0782bd;
+	height: 25px;
+	font-size: 16px;
+	padding-left: 7px;
+	line-height: 25px;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+.main .centre .centre-info-box .info-left-box .info-menu a{
+	text-decoration: none;
+	color: #0782bd;
+	font-size: 14px;
+	height: 25px;
+	line-height: 25px;
+	margin-top: 1px;
+	float: left;
+	margin-left: 500px;
+	margin-top: 5px;
+}
+.main .centre .centre-info-box .info-left-box .info-menu a:hover{
+	text-decoration: underline;
+}
+.main .centre .centre-info-box .info-left-box .info-content-box .info-box{
+	width: 700px;
+	float: left;
+	height: 40px;
+	padding-left: 0px;
+}
+.main .centre .centre-info-box .info-left-box .info-content-box .info-box div{
+	color: black;
+	text-align: left;
+	font-size: 14px;
+	width: 240px;
+	float: left;
+	line-height: 40px;
+	height:40px;
+}
+.main .centre .centre-info-box .info-left-box .info-content-box .info-box a:hover{
+	text-decoration: underline;
+}
+.main .centre .centre-info-box .info-left-box .info-content-box .info-box .project img{
+	width: 21px;
+	height: 21px;
+	float: left;
+	margin: 0px;
+	margin-top: 8px;
+}
+.main .centre .centre-info-box .info-left-box .info-content-box .info-box .company{
+	width: 130px;
+}
+.main .centre .centre-info-box .info-left-box .info-content-box .info-box .price{
+	width: 80px;
+	color: red;
+}
+.main .centre .centre-info-box .info-left-box .teacher{
+	margin-top: 20px;
+}
+.main .centre .centre-info-box .info-right-box{
+	width: 250px;
+	height: auto;
+	float: left;
+	margin-left: 0px;
+	margin-top: 5px;
+}
+.info-right-box .info-menu{
+	border-left: 4px solid;
+	border-color: #2960de;
+	float: left;
+	color: #0782bd;
+	height: 20px;
+	width: 250px;
+	padding-left: 5px;
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+.info-right-box .info-box{
+	height: 30px;
+	width: 250px;
+	float: left;
+	margin-left: 0px;
+}
+.info-right-box .info-box a:hover{
+	text-decoration: underline;
+}
+.info-right-box .info-box div{
+	font-size: 14px;
+	line-height: 30px;
+	color: black;
+	height: 30px;
+	width: 70px;
+	margin: 0px !important;
+	float: left;
+}
+.info-right-box .info-box .project{
+	width: 180px;
+	padding-left: 0px;
+}
+.info-right-box .info-box-a a{
+	text-decoration: none;
+	color: #0782bd;
+	float: left;
+	margin-left: 181px;
+	margin-top: 10px;
+}
+
+.info-box .project a{
+	text-decoration: none;
+	color: black;
+}
+
+
+.project10_20{
+      width:260px !important;
+   }
+ .deadline10_20{
+       width: 200px !important;
+  }
+
+.main-im{ position:fixed; right: 10px; top:300px; z-index: 100; width: 110px; height: 272px; }
+.main-im .qq-a { display: block; width: 106px; height: 116px; font-size: 14px; color: #0484cd; text-align: center; position: relative; }
+.main-im .qq-a span { bottom: 5px; position: absolute; width: 90px; left: 10px; }
+.main-im .qq-hover-c { width: 70px; height: 70px; border-radius: 35px; position: absolute; left: 18px; top: 10px; overflow: hidden; z-index: 9; }
+.main-im .qq-container { z-index: 99; position: absolute; width: 109px; height: 118px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom: 1px solid #dddddd; background: url(../../images/im/qq-icon-bg.png) no-repeat center 8px; }
+.main-im .img-qq {max-width: 60px; display: block; position: absolute; left: 6px; top: 3px; -moz-transition: all 0.5s; -webkit-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
+.main-im .im-qq:hover .img-qq{ max-width: 70px; left: 1px; top: 8px; position: absolute; }
+.main-im .im_main {background: #F9FAFB; border: 1px solid #dddddd; border-radius: 10px; background: #F9FAFB;display:none;}
+.main-im .im_main .im-tel { color: #000000; text-align: center; width: 109px; height: 60px; border-bottom: 1px solid #dddddd; }
+.main-im .im_main .im-tel div{font-weight:bold;font-size: 12px;margin-top:11px;}
+.main-im .im_main .im-tel .tel-num { font-family: Arial; font-weight: bold; color: #e66d15;}
+.main-im .im_main .im-tel:hover { background: #fafafa; }
+.main-im .im_main .weixing-container {width: 55px; height: 47px; border-right: 1px solid #dddddd; background: #f5f5f5; border-bottom-left-radius: 10px; background: url(../../images/im/weixing-icon.png) no-repeat center center;float:left;}
+.main-im .im_main .weixing-show {width: 112px; height: 172px; background: #ffffff; border-radius: 10px; border: 1px solid #dddddd; position: absolute; left: -125px; top: -126px; }
+.main-im .im_main .weixing-show .weixing-sanjiao {width:0; height: 0; border-style: solid; border-color: transparent transparent transparent #ffffff; border-width: 6px; left: 112px; top: 134px; position: absolute; z-index: 2;}
+.main-im .im_main .weixing-show .weixing-sanjiao-big { width: 0; height: 0; border-style: solid; border-color: transparent transparent transparent #dddddd; border-width: 8px; left: 112px; top: 132px; position: absolute; }
+.main-im .im_main .weixing-show .weixing-ma { width: 104px; height: 103px; padding-left: 5px; padding-top: 5px; }
+.main-im .im_main .weixing-show .weixing-txt{position:absolute;top:110px;left:7px;width:100px;margin:0 auto; text-align:center;}
+.main-im .im_main .go-top { width: 50px; height: 47px; background: #f5f5f5; border-bottom-right-radius: 10px; background: url(../../images/im/toTop-icon.png) no-repeat center center;float:right;}
+.main-im .im_main .go-top a { display: block; width: 52px; height: 47px; }
+.main-im .close-im { position: absolute; right: 10px; top: -12px; z-index: 100; width: 24px; height: 24px; }
+.main-im .close-im a { display: block; width: 24px; height: 24px; background: url(../../images/im/close_im.png) no-repeat left top; }
+.main-im .close-im a:hover { text-decoration: none; }
+.main-im .open-im { cursor: pointer; margin-left: 68px; width: 40px; height: 133px; background: url(../../images/im/open_im.png) no-repeat left top; }

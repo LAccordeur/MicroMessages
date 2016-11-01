@@ -1,0 +1,42 @@
+.feedback-big-title {
+    background: #0782bd;
+    color: #FFF;
+    height: 48px;
+    line-height: 48px;
+}
+
+.feedback-big-title div {
+    width: 960px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.feedback-main {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.feedback-con {
+    margin: 30px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.feedback-content-one {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.feedback-content-two {
+    width: 50%;
+    float: right;
+    padding: 10px;
+}
+
+.part-two-header {
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
