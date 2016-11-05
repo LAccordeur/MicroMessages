@@ -56,3 +56,5 @@ public class AddAllNumbers {
         addAllNumbers.addNumbers(num1);
     }
 }
+
+

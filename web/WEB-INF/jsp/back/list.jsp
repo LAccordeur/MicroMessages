@@ -15,7 +15,7 @@
 		<script src="<%= basePath %>resources/js/back/list.js"></script>
 	</head>
 	<body style="background: #e1e9eb;">
-		<form action="/list.action" id="mainForm" method="post">
+		<form action="<%=basePath%>list.action" id="mainForm" method="post">
 			<div class="right">
 				<div class="current">当前位置：<a href="javascript:void(0)" style="color:#6E6E6E;">内容管理</a> &gt; 内容列表</div>
 				<div class="rightCont">

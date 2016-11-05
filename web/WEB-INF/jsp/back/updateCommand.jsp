@@ -25,7 +25,7 @@
   <script src="<%= basePath %>resources/js/back/list.js"></script>
 </head>
 <body style="background: #e1e9eb;">
-<form action="/updateCommandServlet.action?type=goCommit" id="mainForm" method="post">
+<form action="<%=basePath%>updateCommandServlet.action?type=goCommit" id="mainForm" method="post">
   <div class="right">
     <%
       Command commandResponse = (Command) request.getAttribute("commandList");

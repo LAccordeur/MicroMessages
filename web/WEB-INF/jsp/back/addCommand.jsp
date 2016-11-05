@@ -26,7 +26,7 @@
     <script src="<%= basePath %>resources/js/back/list.js"></script>
 </head>
 <body style="background: #e1e9eb;">
-<form action="/addCommandServlet.action?type=add" id="mainForm" method="post">
+<form action="<%=basePath%>addCommandServlet.action?type=add" id="mainForm" method="post">
     <div class="right">
         <div class="current">当前位置：<a href="javascript:void(0)" style="color:#6E6E6E;">内容管理</a> &gt; 内容新增</div>
         <div class="rightCont">
@@ -76,15 +76,15 @@
                     <input class="btn btn-default" type="submit" value="提交" /></a>
                 </div>--%>
                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                    <tr>
-                        <td height="34" align="right" valign="middle" colspan="4" >
-                            <input type="button" value="添加" onclick="addTextArea()" tabindex="4" style="border-width:0;width:85px;height:40px;cursor:pointer;margin-right:30px;"  />
-                        </td>
-                        <td width="50%"  height="34" colspan="4" align="left" valign="middle" >
-                            <input type="submit" value="提交" tabindex="4" style="border-width:0;width:85px;height:40px;cursor:pointer;margin-right:30px;"  />
-                        </td>
-                    </tr>
-                </table>
+                <tr>
+                    <td height="34" align="right" valign="middle" colspan="4" >
+                        <input type="button" value="添加" onclick="addTextArea()" tabindex="4" style="border-width:0;width:85px;height:40px;cursor:pointer;margin-right:30px;"  />
+                    </td>
+                    <td width="50%"  height="34" colspan="4" align="left" valign="middle" >
+                        <input type="submit" value="提交" tabindex="4" style="border-width:0;width:85px;height:40px;cursor:pointer;margin-right:30px;"  />
+                    </td>
+                </tr>
+            </table>
             </div>
         </div>
     </div>
