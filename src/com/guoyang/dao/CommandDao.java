@@ -23,7 +23,10 @@ public class CommandDao {
             //获得数据库连接对象Sqlsession
             sqlSession = dbUtil.getSqlSesion();
             //查询
-            commandList = sqlSession.selectList("Command.queryCommandList",command);
+//            commandList = sqlSession.selectList("Command.queryCommandList",command);
+            //利用接口编程
+            ICommand iCommand = sqlSession.getMapper(ICommand.class);
+            commandList = iCommand.queryCommandList(command);
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
@@ -41,7 +44,9 @@ public class CommandDao {
 
         try {
             sqlSession = dbUtil.getSqlSesion();
-            sqlSession.delete("Command.deleteOne",id);
+            //sqlSession.delete("Command.deleteOne",id);
+            ICommand iCommand = sqlSession.getMapper(ICommand.class);
+            iCommand.deleteOne(id);
             //提交
             sqlSession.commit();
         } catch (IOException e) {
@@ -58,7 +63,9 @@ public class CommandDao {
 
         try {
             sqlSession = dbUtil.getSqlSesion();
-            sqlSession.delete("Command.deleteBatch",ids);
+//            sqlSession.delete("Command.deleteBatch",ids);
+            ICommand iCommand = sqlSession.getMapper(ICommand.class);
+            iCommand.deleteBatch(ids);
             //提交
             sqlSession.commit();
         } catch (IOException e) {
@@ -76,10 +83,13 @@ public class CommandDao {
         try {
             sqlSession = dbUtil.getSqlSesion();
             //进行command表更新
-            sqlSession.update("Command.updateCommand",command);
+//            sqlSession.update("Command.updateCommand",command);
+            ICommand iCommand = sqlSession.getMapper(ICommand.class);
+            iCommand.updateCommand(command);
             //进行command_content表更新
             List<CommandContent> contents = command.getContentList();
-            sqlSession.update("Command.updateCommandContent",contents);
+//            sqlSession.update("Command.updateCommandContent",contents);
+            iCommand.updateCommandContent(contents);
             //提交
             sqlSession.commit();
         } catch (IOException e) {
@@ -97,15 +107,17 @@ public class CommandDao {
         try {
             sqlSession = dbUtil.getSqlSesion();
             //插入命令
-            sqlSession.insert("Command.insertCommand",command);
-
+//            sqlSession.insert("Command.insertCommand",command);
+            ICommand iCommand = sqlSession.getMapper(ICommand.class);
+            iCommand.insertCommand(command);
             //获取主键并加入到content
             List<CommandContent> contentList = command.getContentList();
             for (CommandContent content : contentList) {
                 content.setCommandID(command.getId());
             }
             //插入命令内容
-            sqlSession.insert("Command.insertCommandContent",contentList);
+//            sqlSession.insert("Command.insertCommandContent",contentList);
+            iCommand.insertCommandContent(contentList);
             //提交
             sqlSession.commit();
         } catch (IOException e) {
